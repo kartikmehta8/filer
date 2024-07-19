@@ -1,0 +1,52 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.content-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+}
+
+.folder,
+.file {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.folder {
+  font-weight: bold;
+}
+
+.file {
+  margin-left: 20px;
+}
+
+.index-file {
+  color: #6c757d;
+}
+
+.folder-contents {
+  padding-left: 20px;
+}
+
+.folder:hover,
+.file:hover {
+  background-color: #e9ecef;
+}
+
+.folder svg,
+.file svg {
+  margin-right: 5px;
+}
