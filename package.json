@@ -5,8 +5,9 @@
   "scripts": {
     "generate-routes": "node generateRoutes.js",
     "start": "npm run generate-routes && parcel public/index.html",
-    "build": "npm i @parcel/watcher-linux-x64-glibc && npm run generate-routes && parcel build public/index.html --dist-dir dist",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\""
+    "build": "npm i @parcel/watcher-linux-x64-glibc && mkdir dist && npm run generate-routes && parcel build public/index.html --dist-dir dist",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\"",
+    "host"
   },
   "author": "kartikmehta8",
   "license": "MIT",
