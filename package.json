@@ -5,7 +5,7 @@
   "scripts": {
     "generate-routes": "node generateRoutes.js",
     "start": "npm run generate-routes && parcel public/index.html",
-    "build": "npx parcel build",
+    "build": "npm i @parcel/watcher-linux-x64-glibc && npx parcel build",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\""
   },
   "author": "kartikmehta8",
