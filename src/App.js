@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import MarkdownRenderer from './MarkdownRenderer';
-import Sidebar from './Sidebar';
+import MarkdownRenderer from './components/MarkdownRenderer';
+import Sidebar from './components/Sidebar';
 import routes from '../public/routes.json';
-import './App.css';
+import './styles/App.css';
 
 const App = () => {
   return (
